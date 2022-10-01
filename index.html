@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yile Hu's Personal Website</title>
+<author style="visibility:hidden;">Yile Hu</author>
+<link rel="stylesheet" href="styles.css">
+<script language="Javascript">
+    function process(){
+        alert("Your visit has been recorded")
+    }
+</script>
+</head>
+<body>
+    <div class = "menu">
+        <a class="menu-item" href="index.html">Home</a>
+        <a class="menu-item" href="https://github.com/yhu422?tab=repositories" target="_blank">Github</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class = "main">
+        <div>
+        <h1  class = "title">Yile Hu, Software Engineer, Hiphop Lover, Daydreamer</h1>
+        </div>
+
+        <div class = "photo">
+        <img src="bio_photo.jpeg" alt="Yile's Photo" id="my_photo">
+        </div>
+
+        <div class="biography">
+        <br>
+        <h2 class="header"> Biography </h3>
+        <h6 class="content">
+        I am Yile. I was born in Chengdu, China aka the home of pandas. Currently
+        located in Berkeley, CA, I am a sophomore studying Computer Science. Beside
+        studying, I like to work out, play video games and wandering around.
+        </h6>
+        </div>
+    </div>
+    <div class = "works">
+        <h2 class="header"> Works & Projects</h2>
+        <div class = "works-item">
+            <img src="git_icon.png" class="works-icon">
+            <h4 class="works-title">Gitlet Version Control System</h4>
+            <h6 class="works-description"> Used custom objects, 
+                TreeMap, Graph and more to support basic functionalities such as
+                 commands including add, remove, reset, status, log, branch, 
+                 checkout, commit, merge.
+            </h6>
+        </div>
+        <div class = "works-item"></div>
+    </div>
+    <div class = "contact">
+        <h2 class="header" style="margin-bottom:0;"> Contact</h2>
+        <ul>
+            <li><h3>Email: yhu422@berkeley.edu</h3></li>
+            <li><h3>Telephone: (510)-990-7386</h3></li>
+            <li><h3>Linkedin: <a href="https://www.linkedin.com/in/yile-hu-90b124222/">Linkedin Profile</a></h3></li>
+        </ul>
+    </div>
+    <div class = "fun">
+        <form id="form" name="record" action="" method="GET">Fill the form so I can record your visit
+        <br>
+        <label>First Name:</label><br>
+        <input type="text" name="fname"><br>
+        <label>Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="button" name="button" value="Submit" onClick="process()">
+        </form>
+        <h5>A Button To Refresh Page</h5>
+        <button onClick="window.location.reload();">Refresh Page</button>
+    </div>
+</body>
+</html>
